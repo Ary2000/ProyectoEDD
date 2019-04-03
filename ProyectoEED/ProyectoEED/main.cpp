@@ -14,6 +14,7 @@ int main()
 #include "Simple_window.h"
 #include "Graph.h"
 using namespace Graph_lib;
+using namespace std;
 
 typedef struct Nodo* enlace;
 struct Nodo {
@@ -22,6 +23,14 @@ struct Nodo {
 	Nodo(int v) : v{ v }, sig{ nullptr } {}
 	Nodo(int v, enlace sig) : v{ v }, sig{ sig } {}
 };
+
+
+Point crearNodo(int posicionx, int posiciony){
+	Point nodo = Point(posicionx + 40, posiciony + 30);
+	return nodo;
+
+}
+
 
 void crearTablero()
 {
@@ -217,6 +226,13 @@ void crearTablero()
 	cuad7x4.set_color(Color::black);
 	win.attach(cuad7x4);
 
+	Point h = Point(ejex1 + 15, ejey1 + 25);
+	Graph_lib::Rectangle nodo(h, 50, 30);
+	nodo.set_color(Color::black);
+	win.attach(nodo);
+
+	//crearNodo(ejex1, ejey1, win);
+
 	win.wait_for_button();
 
 	//II make a shape(a polygonl
@@ -228,6 +244,20 @@ void crearTablero()
 		//II give mntrol ro the display engine
 }
 
+void usuarioInput() {
+	while (true) {
+		String input;
+		cin >> input;
+		cout << input << endl;
+		if (input[1] == 20) {
+
+		}
+
+	}
+}
+
 int main() {
-	crearTablero();
+	//crearTablero();
+	cout << "Inserte la instrucción" << endl;
+	usuarioInput();
 }
