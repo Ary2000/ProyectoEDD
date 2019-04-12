@@ -1,0 +1,8 @@
+﻿Opening repositories:
+C:\Users\aryel\source\repos\ProyectoEDD
+Commit d89c4172 created locally in repository C:\Users\aryel\source\repos\ProyectoEDD
+Pushing Ventana
+Error encountered while pushing to the remote repository: Git failed with a fatal error.
+unable to access 'https://github.com/Ary2000/ProyectoEDD.git/': Could not resolve host: github.com
+Pushing to https://github.com/Ary2000/ProyectoEDD.git
+
